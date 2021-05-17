@@ -1,15 +1,98 @@
 {
-	"pages": [ //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
+	"easycom": {
+		"^u-(.*)": "uview-ui/components/u-$1/u-$1.vue"
+	},
+	"pages": [
 		{
 			"path": "pages/index/index",
 			"style": {
-				"navigationBarTitleText": "uni-app"
+				"navigationBarTitleText": "SHOP云服务"
+			}
+		},
+		{
+			"path": "pages/user/index",
+			"style": {
+				"navigationBarTitleText": "会员中心"
+			}
+		},
+		{
+			"path": "pages/user/profile",
+			"style": {
+				"navigationBarTitleText": "基本资料"
+			}
+		},
+		{
+			"path": "pages/address/list",
+			"style": {
+				"navigationBarTitleText": "收货地址"
+			}
+		},
+		{
+			"path": "pages/address/add",
+			"style": {
+				"navigationBarTitleText": "收货地址添加"
+			}
+		},
+		{
+			"path": "pages/address/edit",
+			"style": {
+				"navigationBarTitleText": "收货地址编辑"
+			}
+		},
+		{
+			"path": "pages/repair/add",
+			"style": {
+				"navigationBarTitleText": "在线报修"
+			}
+		},
+		{
+			"path": "pages/repair/list",
+			"style": {
+				"navigationBarTitleText": "报修列表"
+			}
+		},
+		{
+			"path": "pages/product/list",
+			"style": {
+				"navigationBarTitleText": "商品大全"
+			}
+		},
+		{
+			"path": "pages/user/register",
+			"style": {
+				"navigationBarTitleText": "完善信息"
 			}
 		}
 	],
+	"tabBar": {
+		"color": "#7A7E83",
+		"selectedColor": "#3cc51f",
+		"borderStyle": "black",
+		"backgroundColor": "#ffffff",
+		"list": [
+			{
+				"pagePath": "pages/index/index",
+				"iconPath": "static/images/menu/menu1.jpg",
+				"selectedIconPath": "static/images/menu/visited1.jpg",
+				"text": "首页"
+			}, 
+			{
+				"pagePath": "pages/repair/add",
+				"iconPath": "static/images/menu/menu2.jpg",
+				"selectedIconPath": "static/images/menu/visited2.jpg",
+				"text": "在线报修"
+			},
+			{
+				"pagePath": "pages/user/index",
+				"iconPath": "static/images/menu/menu3.jpg",
+				"selectedIconPath": "static/images/menu/visited3.jpg",
+				"text": "我的"
+			}
+		]
+	},
 	"globalStyle": {
 		"navigationBarTextStyle": "black",
-		"navigationBarTitleText": "uni-app",
+		"navigationBarTitleText": "SHOP云服务",
 		"navigationBarBackgroundColor": "#F8F8F8",
 		"backgroundColor": "#F8F8F8"
 	}
